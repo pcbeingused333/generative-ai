@@ -99,7 +99,7 @@ Answer: {{target}}
 
 In the Model Name field enter:
 ```
-gemini-2.5-flash
+gemini-3.8-flash
 ```
 
 In the System Instructions field enter:
@@ -150,7 +150,7 @@ Click Load Prompt, and Upload and Get Response... ⏰ Wait!!
 Review the responses.
 
 - **Model-Based:** 'question-answering-quality'
-- **Model:** 'gemini-2.5-pro'
+- **Model:** 'gemini-3.8-flash'
 
 Launch the Eval... ⏰ Wait!!
 
@@ -165,7 +165,7 @@ Use this for a quick, zero-data upgrade to your prompt.
 
 🖱️ Click **Load Prompt**.
 
-- **Target Model:** 'gemini-2.0-flash-001' (or your preferred model)
+- **Target Model:** 'gemini-3.8-flash' (or your preferred model)
 - **Tone:** 'Professional'
 
 🖱️ Click **Auto-Suggest Directives**.
@@ -192,7 +192,7 @@ Use this for data-driven optimization using a hill-climbing algorithm.
 🖱️ Click **Load Prompt**.
 
 - **Evaluation Metrics:** 'question_answering_correctness' (default)
-- **Target Model:** 'gemini-2.5-flash'
+- **Target Model:** 'gemini-3.8-flash'
 
 🖱️ Click **Start Optimization Job**.
 
@@ -208,7 +208,7 @@ Navigate back to **Evaluation** and run an evaluation similar to step 3, but loa
 
 🔧 Set-Up Prompt Optimization using Agent Platform's batch optimization service.
 
-- **Target Model:** 'gemini-2.5-flash'
+- **Target Model:** 'gemini-3.8-flash'
 - **Existing Prompt:** 'math_prompt_test'
 - **Version:** '1'
 

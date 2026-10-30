@@ -109,9 +109,9 @@ def _handle_auto_suggest():
     sys_inst = st.session_state.local_prompt.prompt_to_run.system_instruction or "None"
     prompt_data = st.session_state.local_prompt.prompt_to_run.prompt_data or "None"
 
-    model_name = st.session_state.get("ocr_target_model", "gemini-2.5-pro")
+    model_name = st.session_state.get("ocr_target_model", "gemini-3.8-flash")
     if not model_name:
-        model_name = "gemini-2.5-pro"
+        model_name = "gemini-3.8-flash"
 
     try:
         model = GenerativeModel(model_name)
@@ -133,9 +133,9 @@ def _handle_optimize():
     directives = st.session_state.get("ocr_directives", "")
     tone = st.session_state.get("ocr_tone", "Professional")
 
-    model_name = st.session_state.get("ocr_target_model", "gemini-2.5-pro")
+    model_name = st.session_state.get("ocr_target_model", "gemini-3.8-flash")
     if not model_name:
-        model_name = "gemini-2.5-pro"
+        model_name = "gemini-3.8-flash"
 
     try:
         model = GenerativeModel(model_name)
@@ -249,7 +249,7 @@ def main():
                 current_model = current_model.split("/")[-1]
             st.text_input(
                 "Target Model",
-                value=current_model if current_model else "gemini-2.0-flash-001",
+                value=current_model if current_model else "gemini-3.8-flash",
                 key="ocr_target_model",
             )
         with c2:
